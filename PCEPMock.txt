@@ -1,0 +1,235 @@
+BO'LIM 1 — Python Asoslari
+1. Quyidagi kod nimani chiqaradi?
+
+print("a", "b", "c", sep="-", end="!")
+print("d")
+A) a-b-c!d B) a-b-c! d C) a-b-c!\nd D) a b c!d
+
+2. Quyidagi ifoda natijasi nima?
+
+print(2 ** 3 ** 2)
+A) 64 B) 512 C) 12 D) 36
+
+3. Quyidagi kod nima chiqaradi?
+
+x = int("3.5")
+print(x)
+A) 3 B) 4 C) 3.5 D) ValueError
+
+4. input() funksiyasi qaytaradigan qiymat turi qanday?
+
+A) int B) float C) str D) input chaqirilgan o'zgaruvchi turiga bog'liq
+
+5. Quyidagi kod natijasi nima?
+
+print(10 // 3, 10 % 3, 10 / 3)
+A) 3 1 3.3333333333333335 B) 3.33 1 3 C) 3 1.0 3.33 D) 3 1 3
+
+🟡 BO'LIM 2 — Control Flow
+6. Quyidagi kod nima chiqaradi?
+
+x = 5
+if x > 0:
+    if x < 10:
+        print("A")
+    else:
+        print("B")
+else:
+    print("C")
+A) A B) B C) C D) A va B
+
+7. Quyidagi while loop necha marta ishlaydi?
+
+i = 0
+while i < 5:
+    i += 2
+    print(i)
+A) 2 marta B) 3 marta C) 4 marta D) 5 marta
+
+8. Quyidagi kod nima chiqaradi?
+
+for i in range(2, 10, 3):
+    print(i, end=" ")
+A) 2 3 4 5 6 7 8 9 B) 2 5 8 C) 2 5 8 11 D) 3 6 9
+
+9. Quyidagi kod nima chiqaradi?
+
+for i in range(3):
+    if i == 1:
+        continue
+    if i == 2:
+        break
+    print(i)
+else:
+    print("done")
+A) 0 va done B) 0 C) 0 1 2 done D) 0 2
+
+10. Quyidagi while...else bloki natijasi nima?
+
+i = 0
+while i < 3:
+    print(i, end=" ")
+    i += 1
+else:
+    print("end")
+A) 0 1 2 B) 0 1 2 end C) end D) 0 1 2 3 end
+
+11. Quyidagi ifoda nimaga teng (short-circuit)?
+
+x = 0
+y = 10
+print(x and y, x or y)
+A) 0 0 B) 10 10 C) 0 10 D) True False
+
+12. Quyidagi kod nimani chiqaradi?
+
+for i in range(5, 0, -1):
+    if i == 3:
+        break
+    print(i, end=" ")
+A) 5 4 B) 5 4 3 C) 5 4 3 2 1 D) 4 3 2 1
+
+🟠 BO'LIM 3 — Data Collections
+13. Quyidagi kod nima chiqaradi?
+
+lst = [1, 2, 3, 4, 5]
+print(lst[1:4])
+A) [1, 2, 3] B) [2, 3, 4] C) [1, 2, 3, 4] D) [2, 3, 4, 5]
+
+14. Quyidagi kod nima chiqaradi?
+
+lst = [1, 2, 3]
+new = lst
+new.append(4)
+print(lst)
+A) [1, 2, 3] B) [1, 2, 3, 4] C) [4, 1, 2, 3] D) Error
+
+15. Quyidagi kod natijasi nima?
+
+lst = [3, 1, 2]
+result = lst.sort()
+print(result)
+A) [1, 2, 3] B) [3, 1, 2] C) None D) Error
+
+16. Quyidagi kod nimani chiqaradi?
+
+t = (1, 2, 3)
+t[0] = 10
+print(t)
+A) (10, 2, 3) B) (1, 2, 3) C) TypeError D) (10,)
+
+17. Quyidagi kod natijasi nima?
+
+d = {"a": 1, "b": 2}
+print(d.get("c", 99))
+A) None B) KeyError C) 99 D) 0
+
+18. Quyidagi kod nima chiqaradi?
+
+s = "Python"
+print(s[-3:])
+A) Pyt B) hon C) Pyth D) tho
+
+19. Quyidagi kod nima chiqaradi?
+
+lst = [1, 2, 3, 4, 5]
+print(lst[::-2])
+A) [5, 3, 1] B) [1, 3, 5] C) [5, 4, 3, 2, 1] D) [4, 2]
+
+20. Quyidagi kod nima chiqaradi?
+
+s = "  Hello World  "
+print(s.strip().split())
+A) ["Hello", "World"] B) ["Hello World"] C) [" Hello", "World "] D) "Hello World"
+
+🔴 BO'LIM 4 — Funksiyalar va Exceptions
+21. Quyidagi funksiya nima chiqaradi?
+
+def f(x, y=5):
+    return x + y
+
+print(f(3), f(3, 10))
+A) 8 13 B) 5 10 C) Error D) 3 13
+
+22. Quyidagi kod nima chiqaradi?
+
+x = 10
+def func():
+    x = 20
+    print(x)
+func()
+print(x)
+A) 20 20 B) 10 10 C) 20 10 D) 10 20
+
+23. Quyidagi kod nima chiqaradi?
+
+def f(*args, **kwargs):
+    print(len(args), len(kwargs))
+
+f(1, 2, 3, a=4, b=5)
+A) 5 0 B) 3 2 C) 2 3 D) 3 5
+
+24. Quyidagi try/except/finally bloki nima chiqaradi?
+
+try:
+    print("A")
+    x = 1 / 0
+    print("B")
+except ZeroDivisionError:
+    print("C")
+finally:
+    print("D")
+A) A B D B) A C D C) A C D) A D
+
+25. Quyidagi kod nima chiqaradi?
+
+def add(a, b):
+    return a + b
+
+print(add(b=5, a=3))
+A) 8 B) 35 C) 53 D) TypeError
+
+26. Quyidagi lambda natijasi nima?
+
+square = lambda x: x * x
+print(square(5))
+A) 10 B) 25 C) 55 D) Error
+
+27. Quyidagi kod nima chiqaradi?
+
+def f(lst=[]):
+    lst.append(1)
+    return lst
+
+print(f())
+print(f())
+A) [1] va [1] B) [1] va [1, 1] C) [] va [1] D) Error
+
+28. Quyidagi exception qaysi turdagi xato keltirib chiqaradi?
+
+x = int("hello")
+A) TypeError B) NameError C) ValueError D) SyntaxError
+
+29. Quyidagi kod nima chiqaradi?
+
+def f():
+    try:
+        return 1
+    finally:
+        return 2
+
+print(f())
+A) 1 B) 2 C) 1 2 D) None
+
+30. Quyidagi try bloki nima chiqaradi?
+
+try:
+    lst = [1, 2, 3]
+    print(lst[5])
+except IndexError:
+    print("Index")
+except Exception:
+    print("Other")
+else:
+    print("OK")
+A) OK B) Index C) Other D) Index OK
